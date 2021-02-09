@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dani.css" type="text/css">
+    <title>Kettes számrendszer</title>
+</head>
+<body>        
+        <h2>Kettes számrendszer</h2>
+        <h4>A kettes számrendszer vagy bináris számrendszer olyan helyiérték-jelölő számrendszer, 
+            ami két számjeggyel ábrázolja a számokat, az arab számírásban a<br> 0-s és az 1-es jegyekkel. 
+            Mivel digitális áramkörökben a számrendszerek közül a kettest a legegyszerűbb megvalósítani, 
+            a modern számítógépekben<br>és gyakorlatilag bármely olyan elektronikus eszközben, 
+            amely valamilyen számításokat végez, szinte kivétel nélkül ezt használják.
+        </h4>    
+        <p>A tízes számrendszerhez hasonlóan a kettes számrendszerben is elvégezhetők a szokásos alapműveletek.
+             Az ehhez szükséges algoritmusok egyszerűbbek,<br> és hatékonyan valósíthatók meg logikai áramkörökkel.
+              A kettes számrendszer bevezetése több előnnyel is járt a számítástechnikában.
+        </p> 
+        <h3>Összeadás</h3>
+        <ul>
+        <li>
+            A kettes számrendszerbeli összeadás a számítógépek világának legalapvetőbb művelete.Az A és a B pozitív számok<br>
+            úgy adhatók össze, mint a tízes számrendszerben, csak arra kell ügyelni, hogy az összegben nem jelenik meg <br>a kettes
+            (vagy a hármas). Ehelyett átvitel keletkezik, a tízes számrendszerbeli tízes túllépéséhez hasonlóan.
+        </li>      
+        </ul>
+        <h3>Kivonás</h3>
+        <ul>
+        <li>A számítógépek a kivonást a kettes komplemens segítségével végzik. A kisebbítendőhöz hozzá kell adni a kivonandó kettes komplementerét.
+            Ez két lépést jelent. Át kell váltani a kivonandót kettes számrendszerbe, majd a bitjeit át kell billenteni, majd 1-et hozzá kell adni.
+            Az így kapott számot és a kisebbítendő bináris számát össze kell adni. például vonjuk ki a 8-ból az 5-öt.<br> 8-5=3 <br> 8: 1000 5: 0101 5 I: 1010 5 II: 1011<br>
+            Ezeket most össze kell adni. A kapott eredmény az 10011. Itt viszont keletkezik egy felesleges bit, túlcsordulás, amit le kell választani, arra nincs szükség. 1 | 0011 Az így 
+            kapott számot, ha vissza váltjuk 10-es számrendszerbe, akkor megkapjuk az eredményt. 0011 = 1+2 = 3
+            </li>    
+        </ul>
+        <h3>Szorzás</h3>
+        <ul>
+        <li>
+            A kettes számrendszerben hasonlóan lehet szorozni, mint tízes számrendszerben. Lényegesen egyszerűsíti a dolgokat, hogy csak 1 és 0 fordul elő számjegyekként. Arra kell ügyelni, 
+            hogy amikor a részszorzatokat összeadjuk, akkor kettes számrendszerben adunk össze.<br>Áramköri szinten a szorzást is összeadó áramkörök valósítják meg, kihasználva, hogy a szorzás 
+            művelete lebontható sorozatos összeadásokra.<br> Például a decimális 3x4=12 (4+4+4) kifejezést binárisra átírva kapjuk: 0011 x 0100 = 0100 + 0100 + 0100 = 1100
+        </li>    
+        </ul>
+        <h3>Osztás</h3>
+        <ul>
+        <li>
+            A tízes számrendszerhez hasonlóan lehet osztani. Ha az osztó nem kettőhatvány, akkor a hányados periodikus kettedestört lesz. A pontos érték ismeretéhez egy <br>előszakasz + periódusig kell osztani.
+            A számítógépek csak egy bizonyos pontosságig végzik el ezt a műveletet.Hasonlóan lehet maradékosan is osztani.
+            Az osztás műveletet először kivonások - majd összeadások - sorozatára bontjuk, a kivonásokat addig folytatjuk míg a kisebbítendő egyenlő vagy kisebb nem lesz a kivonandónál.
+            <br>Például a decimális 8/2 = 4 ( 8 - 2 - 2 - 2 - 2 ). Az osztandóból kisebbítendő, az osztóból kivonandó lesz.
+        </li>    
+        </ul>
+        <a href="">Vissza a kezdőlapra.</a> 
+</body>
