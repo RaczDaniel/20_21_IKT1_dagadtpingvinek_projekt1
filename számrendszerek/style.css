@@ -12,19 +12,19 @@ h1{
     text-align: center;
     background-color: white;
 }
-.left{
+#left{
     font-size:100pt;
     position: absolute;
     left: 25%;
     background-color: white;
 }
-.center{
+#center{
     font-size:100pt;
     position: absolute;
     left: 50%;
     background-color: white;
 }
-.right{
+#right{
     font-size:100pt;
     position: absolute;
     left: 75%;
@@ -34,17 +34,17 @@ a{
     color:black;
     text-decoration: none;
 }
-.Bináris{
+#Bináris{
     font-size: 15pt;
     position: absolute;
     left: 25%;
 }
-.Decimális{
+#Decimális{
     font-size: 15pt;
     position: absolute;
     left: 50%;
 }
-.Hexadecimális{
+#Hexadecimális{
     font-size: 15pt;
     position: absolute;
     left: 75%;
